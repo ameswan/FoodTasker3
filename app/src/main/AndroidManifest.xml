@@ -20,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CustomerMainActivity" />
-
+        <activity
+            android:name=".CustomerMainActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".MealListActivity"
             android:parentActivityName=".CustomerMainActivity"
@@ -31,7 +31,11 @@
             android:name=".MealDetailActivity"
             android:parentActivityName=".MealListActivity"
             android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".PaymentActivity"
+            android:parentActivityName=".CustomerMainActivity"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity android:name=".DriverMainActivity"></activity>
     </application>
-
 
 </manifest>
