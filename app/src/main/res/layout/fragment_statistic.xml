@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".OrderListFragment">
+    android:padding="10dp"
+    tools:context=".StatisticFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <ListView
-        android:id="@+id/order_list"
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </FrameLayout>
+
+
+
